@@ -1,0 +1,282 @@
+/* Main container */
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.text-content h1 {
+  font-size: 2.7rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Input & Button Group */
+.input-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 500px;
+  
+}
+
+.input-group input {
+  margin-top: 14px;
+  width: 1000px;
+}
+
+.input-group button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.input-group button:hover {
+  background-color: #444;
+}
+
+/* Hero Image */
+.image-content img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+/* What We Do Section */
+.what-we-do {
+  text-align: center;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.what-we-do h2 {
+  margin-top: 200px;
+  font-size: 3.3rem;
+  margin-bottom: 80px;
+}
+
+/* Features Cards */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.feature-card {
+  background: #1E1E1E;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 100px;
+}
+
+.feature-card img {
+  width: 400px;
+  margin-top: 10px;
+  height: 500px;
+}
+
+.feature-card p{
+  font-size: 1rem;
+  font-weight: lighter;
+}
+.feature-card h3{
+  color: aliceblue;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Call to Action Section */
+.cta-section {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.cta-section h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.cta-section p {
+  font-size: 1rem;
+  max-width: 990px;
+  
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Signup Button */
+.signup-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  width: 200px;
+}
+
+.signup-btn:hover {
+  background-color: #444;
+}
+
+
+/* For screens smaller than 1200px (Laptops) */
+@media (max-width: 1200px) {
+  .hero-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  .text-content {
+      max-width: 700px;
+  }
+  .input-group {
+      width: 100%;
+      justify-content: center;
+  }
+  .input-group input {
+      width: 100%;
+  }
+  .image-content img {
+      width: 350px;
+  }
+  .features {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .feature-card {
+      width: 45%;
+  }
+}
+
+/* For screens smaller than 992px (Tablets) */
+@media (max-width: 992px) {
+  .hero-section {
+      gap: 20px;
+  }
+  .text-content h1 {
+      font-size: 2.3rem;
+  }
+  .text-content p {
+      font-size: 0.9rem;
+  }
+  .image-content img {
+      width: 320px;
+  }
+  .what-we-do h2 {
+      font-size: 2.8rem;
+  }
+  .feature-card {
+      width: 80%;
+  }
+  .cta-section h2 {
+      font-size: 2.5rem;
+  }
+}
+
+/* For screens smaller than 768px (Mobile) */
+@media (max-width: 768px) {
+  .info-container {
+      padding: 30px 10px;
+      margin-top: 60px;
+  }
+  .text-content h1 {
+      font-size: 2rem;
+  }
+  .input-group {
+      flex-direction: column;
+      width: 100%;
+  }
+  .input-group input {
+      width: 100%;
+  }
+  .input-group button {
+      width: 100%;
+  }
+  .image-content img {
+      width: 280px;
+  }
+  .what-we-do h2 {
+      font-size: 2.3rem;
+      margin-bottom: 50px;
+  }
+  .features {
+      flex-direction: column;
+      align-items: center;
+  }
+  .feature-card {
+      width: 100%;
+  }
+  .feature-card img {
+      width: 100%;
+      height: auto;
+  }
+  .cta-section h2 {
+      font-size: 2rem;
+  }
+}
+
+/* For screens smaller than 480px (Small Mobile) */
+@media (max-width: 480px) {
+  .text-content h1 {
+      font-size: 1.8rem;
+  }
+  .text-content p {
+      font-size: 0.85rem;
+  }
+  .image-content img {
+      width: 250px;
+  }
+  .what-we-do h2 {
+      font-size: 2rem;
+  }
+  .cta-section h2 {
+      font-size: 1.8rem;
+  }
+  .signup-btn {
+      width: 100%;
+  }
+}
+

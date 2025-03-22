@@ -1,0 +1,117 @@
+.explore-flu {
+    text-align: center;
+    margin: 20px;
+  }
+/* Default Heading Styling */
+.explore-flu h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+   
+    margin-bottom: 30px;
+}
+
+
+/* Animated Typing Effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.typing-effect {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    border-right: 4px solid #000;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+ 
+
+  .media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+  }
+  
+  .media-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .media {
+    width: 400px;
+    height: 500px;
+    display: block;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+  /* For screens smaller than 1024px (Tablets) */
+@media (max-width: 1024px) {
+    .explore-flu h1, .typing-effect {
+        font-size: 60px;
+    }
+    .media-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 10px;
+    }
+    .media {
+        width: 300px;
+        height: 400px;
+    }
+}
+
+/* For screens smaller than 768px (Mobile) */
+@media (max-width: 768px) {
+    .explore-flu h1, .typing-effect {
+        font-size: 45px;
+    }
+    .media-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    .media {
+        width: 250px;
+        height: 350px;
+    }
+}
+
+/* For screens smaller than 480px (Small Mobile) */
+@media (max-width: 480px) {
+    .explore-flu h1, .typing-effect {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    .media-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    .media {
+        width: 200px;
+        height: 300px;
+    }
+}

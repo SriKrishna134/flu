@@ -1,0 +1,200 @@
+.login-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-popup-container {
+    display: flex;
+    width: 800px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-popup-left {
+    width: 40%;
+    background: #000;
+  }
+  
+  .login-popup-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .login-popup-right {
+    width: 60%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .login-popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .login-popup-title h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .login-popup-title img {
+    cursor: pointer;
+    width: 20px;
+  }
+  
+  .login-popup-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .remember-me input {
+    margin-right: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #333;
+  }
+  
+  .social-login {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .google-login {
+    width: 100%;
+    padding: 12px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .google-login:hover {
+    background: #f5f5f5;
+  }
+  
+  p {
+    margin-top: 15px;
+    text-align: center;
+    
+        display: flex;
+        align-items: center;
+    
+    
+  }
+  
+  p span {
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;  /* Ensures span is clickable */
+    z-index: 1000; /* Ensures it's above other elements */
+    position: relative; /* Helps keep its clickable area intact */
+    pointer-events: auto; /* Ensures it captures clicks */
+}
+
+  
+  p span:hover {
+    text-decoration: underline;
+  }
+  
+
+
+  @media (max-width: 1024px) {
+    .login-popup-container {
+        width: 90%;
+        flex-direction: column; /* Stack items vertically */
+    }
+    .login-popup-left {
+        width: 100%;
+        height: 200px;
+    }
+    .login-popup-right {
+        width: 100%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-popup-right {
+        padding: 20px;
+    }
+    .login-popup-title h2 {
+        font-size: 22px;
+    }
+    input, button, .google-login {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .login-popup-subtitle {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-popup-left {
+        height: 150px; /* Reduce height for smaller screens */
+    }
+    .login-popup-right {
+        padding: 15px;
+    }
+    .login-popup-title h2 {
+        font-size: 20px;
+    }
+    input, button, .google-login {
+        padding: 8px;
+        font-size: 13px;
+    }
+    .login-popup-title img {
+        width: 18px; /* Reduce close button size */
+    }
+    p {
+        font-size: 12px;
+    }
+}
